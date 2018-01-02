@@ -1,0 +1,28 @@
+{
+    "name": "dsacb",
+    "version": "1.0.0",
+    "description": "DSA with Callback.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hk-skit/dsacb.git"
+    },
+    "keywords": [
+    "dsa",
+    "callback",
+    "algorithms",
+    "data-structures",
+    "binary-search",
+    "sorting",
+    "search"
+  ],
+    "author": "Hitesh Kumar <hk.skit@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hk-skit/dsacb/issues"
+    },
+    "homepage": "https://github.com/hk-skit/dsacb#readme"
+}
