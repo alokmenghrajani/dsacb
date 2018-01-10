@@ -17,7 +17,7 @@ const signum = (x, y) => {
 const binarySearch = (array, key, comparator = signum) => {
 
     if (!Array.isArray(array)) {
-        throw "First parameter should be an array.";
+        throw "Dsacb.binarySearch: First argument must be an array.";
     }
 
     let low = 0;
@@ -32,7 +32,7 @@ const binarySearch = (array, key, comparator = signum) => {
             return mid;
         }
 
-        if (equality > 1) {
+        if (equality > 0) {
             high = mid - 1;
         } else {
             low = mid + 1;
