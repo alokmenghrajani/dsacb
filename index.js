@@ -1,3 +1,4 @@
-module.exports = (str) => {
-    console.log('Input: ', str);
+const binarySearch = require('./binary-search');
+module.exports = {
+    binarySearch
 };

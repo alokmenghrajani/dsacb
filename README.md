@@ -1,2 +1,2 @@
 # dsacb
-DSA with Callback.
+DSA with Callback/Predicate/Comparator.
