@@ -4,21 +4,26 @@
     "description": "DSA with Callback.",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "mocha --watch **/*.spec.js"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/hk-skit/dsacb.git"
     },
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "mocha": "^4.1.0",
+        "should": "^13.2.0"
+    },
     "keywords": [
-    "dsa",
-    "callback",
-    "algorithms",
-    "data-structures",
-    "binary-search",
-    "sorting",
-    "search"
-  ],
+        "dsa",
+        "callback",
+        "algorithms",
+        "data-structures",
+        "binary-search",
+        "sorting",
+        "search"
+    ],
     "author": "Hitesh Kumar <hk.skit@gmail.com>",
     "license": "MIT",
     "bugs": {
