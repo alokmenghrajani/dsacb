@@ -1,6 +1,8 @@
-const binarySearch = require('./binary-search');
-const jumpSearch = require('./jump-search');
+const binarySearch = require("./binary-search");
+const jumpSearch = require("./jump-search");
+const selectionSort = require("./selection-sort");
 module.exports = {
-    binarySearch,
-    jumpSearch
+  binarySearch,
+  jumpSearch,
+  selectionSort
 };
