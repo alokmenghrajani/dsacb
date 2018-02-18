@@ -9,8 +9,7 @@ describe("bubbleSortRecursive:", function() {
     expect(array.length).equal(0);
   });
 
-  // TODO: Fix this test case.
-  xit("should sort an array", function() {
+  it("should sort an array", function() {
     const array = [2, 1, 3, 5, 4];
     const result = [1, 2, 3, 4, 5];
     bubbleSortRecursive(array);
