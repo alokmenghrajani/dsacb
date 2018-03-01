@@ -10,8 +10,8 @@ describe("insertionSort:", function() {
   });
 
   it("should sort an array", function() {
-    const array = [2, 1, 3, 5, 4];
-    const result = [1, 2, 3, 4, 5];
+    const array = [12, 11, 13, 5, 6];
+    const result = [5, 6, 11, 12, 13];
     insertionSort(array);
     result.forEach((item, index) => {
       expect(item).equal(array[index]);
