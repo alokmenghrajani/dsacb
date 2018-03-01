@@ -1,4 +1,4 @@
-const { signum } = require("../utils");
+const { signum } = require("../../utils");
 /**
  *
  * @param {*} array

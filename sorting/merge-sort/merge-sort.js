@@ -1,4 +1,4 @@
-const { signum } = require("../utils");
+const { signum } = require("../../utils");
 const merge = (array, cb = signum, l, m, r) => {
   // Populate subarray to array to temp arrays.
   const left = [];

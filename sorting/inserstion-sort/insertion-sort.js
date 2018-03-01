@@ -1,4 +1,4 @@
-const { signum } = require("../utils");
+const { signum } = require("../../utils");
 const insertionSort = (array, cb = signum) => {
   for (let index = 1; index < array.length; index += 1) {
     let j = index - 1;

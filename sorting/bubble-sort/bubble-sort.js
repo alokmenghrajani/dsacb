@@ -1,4 +1,4 @@
-const { signum } = require("../utils");
+const { signum } = require("../../utils");
 const bubbleSort = (array, cb = signum) => {
   const sArray = [...array];
   for (let index = 0; index < sArray.length; index += 1) {

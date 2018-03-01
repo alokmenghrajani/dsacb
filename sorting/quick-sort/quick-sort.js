@@ -1,4 +1,4 @@
-const { signum } = require("../utils");
+const { signum } = require("../../utils");
 const partition = (array, cb, low, high) => {
   const pivot = array[high];
   let i = low - 1; // Smaller element index.
