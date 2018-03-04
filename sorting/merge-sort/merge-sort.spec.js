@@ -31,7 +31,6 @@ describe("mergeSort:", function() {
     const array = [1, 2, 3, 4, 5];
     const result = [5, 4, 3, 2, 1];
     mergeSort(array, (x, y) => y - x);
-    console.log(array);
     result.forEach((item, index) => {
       expect(item).equal(array[index]);
     });
