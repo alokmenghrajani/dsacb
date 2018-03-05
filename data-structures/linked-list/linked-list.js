@@ -153,6 +153,96 @@ class LinkedList {
   }
 
   /**
+   * Swaps two nodes of a linked list.
+   * @param {*} key1
+   * @param {*} key2
+   */
+  swap(key1, key2) {
+    if (key1 === key2) {
+      // since both are same nothing to do.
+      return;
+    }
+
+    let nodeA = this.head;
+    let prevA = null;
+    while (nodeA && nodeA.data !== key1) {
+      prevA = nodeA;
+      nodeA = nodeA.next;
+    }
+
+    let nodeB = this.head;
+    let prevB = null;
+    while (nodeB && nodeB.data !== key2) {
+      prevB = nodeB;
+      nodeB = nodeB.next;
+    }
+
+    if (nodeA === null || nodeB === null) {
+      console.log("key(s) is/are not present in the list.");
+      return;
+    }
+
+    if (prevA === null) {
+      head = nodeB;
+    } else {
+      prevA.next = nodeB;
+    }
+
+    if (prevB === null) {
+      head = nodeA;
+    } else {
+      prevB.next = nodeA;
+    }
+    // swapping next for both nodes.
+    [nodeA.next, nodeB.next] = [nodeB.next, nodeA.next];
+  }
+
+  /**
+   * Returns item at nth position in linked list.
+   * @param {} position
+   */
+  getNode(position) {
+    let n = 0;
+    let node = this.head;
+    while (node) {
+      if (position === n) {
+        return node.data;
+      }
+      n += 1;
+      node = node.next;
+    }
+    return null;
+  }
+
+  /**
+   * Returns node at {@code position}. Uses recursion to reach at position.
+   * @param {*} position
+   * @param {*} node
+   */
+  getNodeRecursive(position, node = this.head) {
+    if (node === null) {
+      return null;
+    }
+    if (position === 0) {
+      return node.data;
+    }
+    return this.getNodeRecursive(position - 1, node.next);
+  }
+
+  getMiddleNode() {
+    if (this.isEmpty) {
+      return null;
+    }
+    let slowNode = this.head;
+    let fastNode = this.head;
+    while (fastNode !== null && fastNode.next !== null) {
+      slowNode = slowNode.next;
+      fastNode = fastNode.next.next;
+    }
+    return slowNode.data;
+  }
+
+  /**
    * Prints all the items in the linked list using iteration.
    * @param {Function} logger
    */
