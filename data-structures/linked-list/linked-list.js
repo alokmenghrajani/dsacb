@@ -215,6 +215,32 @@ class LinkedList {
   }
 
   /**
+   * Returns nth node form the position.
+   * @param {*} position
+   */
+  getNodeRight(position) {
+    if (this.isEmpty) {
+      return null;
+    }
+    let count = 0;
+    let refNode = this.head;
+    let mainNode = this.head;
+    while (count < n) {
+      if (refNode === null) {
+        // n is greater than size of the linked list.
+        return null;
+      }
+      refNode = refNode.next;
+      count += 1;
+    }
+    while (refNode !== null) {
+      mainNode = mainNode.next;
+      refNode = refNode.next;
+    }
+    return mainNode;
+  }
+
+  /**
    * Returns node at {@code position}. Uses recursion to reach at position.
    * @param {*} position
    * @param {*} node
@@ -240,6 +266,24 @@ class LinkedList {
       fastNode = fastNode.next.next;
     }
     return slowNode.data;
+  }
+
+  reverse() {
+    let prev = null;
+    let current = head;
+    let next = null;
+    while (current) {
+      // next node.
+      next = current.next;
+      // link next to prev
+      current.next = prev;
+      // update previous by current
+      prev = current;
+      // update current with next.
+      current = next;
+    }
+    // new head after reverse.
+    this.head = prev;
   }
 
   /**
