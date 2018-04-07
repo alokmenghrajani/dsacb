@@ -3,7 +3,7 @@ DSA with Callback/Predicate/Comparator.
 
 ## Introduction
 
-Data Structures and Algorithms with Callback/Predicate/Comaprator(DSACB) is a utility which implements DSAs with callback/predicate/comparator. eg.
+Data Structures and Algorithms with Callback/Predicate/Comparator(DSACB) is a utility which implements DSAs with callback/predicate/comparator. eg.
 ```javascript
 const dsacb = require('dsacb');
 const result = dsacb.binarySearch([1,2,3,4,5,6,7], 5, (mid, key)=> mid - key);
